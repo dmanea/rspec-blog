@@ -1,7 +1,0 @@
-example_id                        | status | run_time        |
---------------------------------- | ------ | --------------- |
-./spec/models/post_spec.rb[1:1:1] | passed | 0.00426 seconds |
-./spec/models/post_spec.rb[1:1:2] | passed | 0.00047 seconds |
-./spec/models/post_spec.rb[1:2:1] | passed | 0.01019 seconds |
-./spec/rspec_glob_spec.rb[1:1]    | passed | 0.00032 seconds |
-./spec/rspec_glob_spec.rb[1:2]    | passed | 0.00033 seconds |
