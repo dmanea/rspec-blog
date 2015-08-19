@@ -7,13 +7,21 @@ RSpec.describe Post, type: :model do
   describe '#valid?' do
     
     it 'should not valid after initialization' do
-      expect(post.valid?).to be false
+      expect(post.valid?).to be_falsy
     end
 
     it 'should be valid with only title and description' do
       post.title        = 'test'
       post.description  = 'test'
-      expect(post.valid?).to be true
+      expect(post.valid?).to be_truthy
+    end
+  end
+
+  describe '#save' do
+    let(:post)  { build :post }
+    it 'should persist records' do
+      expect(post.save).to be_truthy
+      expect(Post.count).to be_eql 1
     end
   end
 
